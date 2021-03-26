@@ -1,9 +1,11 @@
-function [no_worm_data] = import_no_worm_data()
+%Function to take 101x101 pixel no worm pictures and convert them to
+%usable data.
+function [no_worm_data] = import_no_worm_data(num_of_pics)
 
 %Create image value matrix
-no_worm_data = zeros(10201, 5480);
+no_worm_data = zeros(10201, num_of_pics);
 
-for i = 1:5480
+for i = 1:num_of_pics
     
     %Import file names iterativley and store image pixel values in cval 
     %This file path is exclusive to my computer!
@@ -19,4 +21,5 @@ for i = 1:5480
 end
 
 end
+
 
