@@ -1,7 +1,7 @@
 function [no_worm_data] = import_no_worm_data()
 
 %Create image value matrix
-no_worm_data = zeros(10201, 4);
+no_worm_data = zeros(10201, 5480);
 
 for i = 1:5480
     
