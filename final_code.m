@@ -8,8 +8,7 @@ X = [x1';x2'];
 % [coeff,score,latent] = pca(X);
 [coeff, score, ~, ~, explained, ~] = pca(X,'Rows','all', 'Algorithm', 'eig');
 
-A1 = score(:,1:100);
-A1 = [A1 A1.^2];
+A1 = score(:,1:200);
 A1 = [A1 ones(size(A1,1),1)];
 t = [ones(N,1); zeros(N,1)];
 
