@@ -1,5 +1,8 @@
 clear;close;clc;
-N = 4000;
+prompt = 'Enter image directory name: '
+testfolder = input(prompt,'s');
+a = dir(fullfile(testfolder, '*.png'));
+N=size(a,1)
 [x1, x2] = import_worm_data(N);
 X = [x1';x2'];
 % [coeff,score,latent] = pca(X);
