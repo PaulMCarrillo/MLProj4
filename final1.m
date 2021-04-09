@@ -37,6 +37,9 @@ report(l+2,2) = count0;
 exportfile='results.xlsx';
 xlswrite(exportfile,report);
 
+export_model = 'model.xlsx';
+xlswrite(export_model,weight);
+
 function [worm_data, result] = import_worm_data()
     
     prompt = 'Enter image directory name: ';
