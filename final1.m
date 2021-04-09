@@ -1,3 +1,5 @@
+% By: Gautham Mudunuru, Paul Carrillo, John Agan
+
 clear;close;clc;
 
 [x1,report] = import_worm_data();
